@@ -111,7 +111,7 @@ function loadGallery() {
         const img = document.createElement('img');
         img.src = `pics/${photo}`;
         img.alt = `Memory ${index + 1}`;
-        img.loading = 'lazy';
+        // Removed lazy loading for better mobile compatibility
 
         const overlay = document.createElement('div');
         overlay.classList.add('gallery-item-overlay');
