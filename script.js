@@ -26,6 +26,22 @@ function initPopup() {
         noButtonMoveCount++;
     });
 
+    // No button click/touch - move it away! (for mobile)
+    noBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        moveNoButton();
+        shyMessage.classList.add('visible');
+        noButtonMoveCount++;
+    });
+
+    // No button touch - move it away! (for mobile touch devices)
+    noBtn.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        moveNoButton();
+        shyMessage.classList.add('visible');
+        noButtonMoveCount++;
+    });
+
     function moveNoButton() {
         const popup = document.querySelector('.popup-content');
         const popupRect = popup.getBoundingClientRect();
