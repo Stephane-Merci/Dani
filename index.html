@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, My Love 💕</title>
+    <meta name="description" content="A special Valentine's Day surprise filled with love and memories">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Valentine Question Popup -->
+    <div class="valentine-popup" id="valentinePopup">
+        <div class="popup-content">
+            <h2 class="popup-title">Dani, Will you be my Valentine?</h2>
+            <div class="popup-buttons">
+                <button class="popup-btn yes-btn" id="yesBtn">Yes! 💕</button>
+                <button class="popup-btn no-btn" id="noBtn">No</button>
+            </div>
+            <p class="shy-message" id="shyMessage">The "No" is shy... it keeps running away! 😊</p>
+        </div>
+    </div>
+
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="word">Happy</span>
+                <span class="word">Valentine's</span>
+                <span class="word">Day</span>
+            </h1>
+            <p class="hero-subtitle">To the most amazing person in my life</p>
+            <div class="scroll-indicator">
+                <span>Scroll to see your beautiful memories</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Message Section -->
+    <section class="love-message">
+        <div class="container">
+            <div class="message-card">
+                <h2 class="section-title">To my Valentine..</h2>
+                <div class="message-slider">
+                    <div class="message-content active" data-message="1">
+                        <p>
+                        <p>Loving you is the finest fate that ever found me.</p>
+                        <p>Today the roses will gather around you to tell you you're the pulse in my hands, you're my
+                            heart infront of me and I absolutely
+                            love you.</p>
+                        <p>I love you more than my eyes love to see you. I love you beyond the calendar,
+                            beyond the tremble of years, beyond the stars themselves</p>
+                        </p>
+                        <p class="signature">I love you ❤️</p>
+                    </div>
+                    <div class="message-content" data-message="2">
+                        <p>From the first moment I saw you, I knew my life would never be the same.</p>
+                        <p>Your smile lights up my darkest days, and your laughter is my favorite melody.</p>
+                        <p>Thank you for being you - beautiful, kind, and absolutely perfect in every way.</p>
+                        <p class="signature">With all my heart 💕</p>
+                    </div>
+                    <div class="message-content" data-message="3">
+                        <p>You are my best friend, my partner in crime, and my greatest adventure.</p>
+                        <p>Every day with you is a gift I cherish, every memory we create is a story I want to tell
+                            forever.</p>
+                        <p>I can't wait to make a million more memories with you, starting today and lasting forever.
+                        </p>
+                        <p class="signature">Eternally yours 💖</p>
+                    </div>
+                </div>
+                <div class="message-navigation">
+                    <button class="message-nav-btn" data-nav="prev">‹</button>
+                    <div class="message-dots">
+                        <span class="dot active" data-dot="1"></span>
+                        <span class="dot" data-dot="2"></span>
+                        <span class="dot" data-dot="3"></span>
+                    </div>
+                    <button class="message-nav-btn" data-nav="next">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Your Beautiful Memories</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Photos will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightboxImage">
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+    </div>
+
+    <!-- Final Message Section -->
+    <section class="final-message">
+        <div class="container">
+            <div class="hearts-burst">
+                <span class="heart">❤️</span>
+                <span class="heart">💕</span>
+                <span class="heart">💖</span>
+                <span class="heart">💗</span>
+                <span class="heart">💝</span>
+            </div>
+            <h2 class="final-title">I Love You</h2>
+            <p class="final-subtitle">Today, tomorrow, and always</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
